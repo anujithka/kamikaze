@@ -133,15 +133,16 @@ form .user-details .input-box{
 	<h4 align ="center" style="color:black;">REGISTRATION</h4>
 	</div>
     <div class="content">
-      <form action="#">
+      <form mothod="'POST">
+        {% csrf_token %}
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" id="fname" name="fullname" placeholder="Enter your name" required >
+            <input type="text" id="fname" name="name" placeholder="Enter your name" required >
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" id="uname" name="username" placeholder="Enter your username" required>
+            <input type="text" id="uname" name="uname" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -149,15 +150,15 @@ form .user-details .input-box{
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" id="uphno" name="uphoneno" placeholder="Enter your number" required>
+            <input type="text" id="uphno" name="phno" placeholder="Enter your number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" id="upswd" name="upassword" placeholder="Enter your password" required>
+            <input type="text" id="upswd" name="pswd" placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" id="ucpswd" name="ucpassword" placeholder="Confirm your password" required>
+            <input type="text" id="ucpswd" name="cpswd" placeholder="Confirm your password" required>
           </div>
         </div>
 
